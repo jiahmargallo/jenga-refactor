@@ -93,11 +93,9 @@ function showGraph(type) {
     if (container) {
         container.parentNode.querySelectorAll('button').forEach(button => {
             if (button.getAttribute('data-name') === type) {
-                button.classList.add('btn-dark');
-                button.classList.remove('btn-outline-dark');
+                button.classList.add('enable');
             } else {
-                button.classList.remove('btn-dark');
-                button.classList.add('btn-outline-dark');
+                button.classList.remove('enable');
             }
         });
         container.innerHTML = '';
